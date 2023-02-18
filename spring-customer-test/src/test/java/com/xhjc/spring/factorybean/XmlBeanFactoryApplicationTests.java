@@ -22,6 +22,10 @@ public class XmlBeanFactoryApplicationTests {
 
 	}
 
+	/**
+	 * Bean的创建的生命周期
+	 *
+	 */
 	@Test
 	public void testApplicationReaource(){
 		ClassPathResource resource = new ClassPathResource("spring-config.xml");

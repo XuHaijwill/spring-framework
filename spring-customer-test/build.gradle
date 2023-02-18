@@ -84,6 +84,9 @@ dependencies {
     testImplementation("org.apache.httpcomponents:httpclient")
     testImplementation("io.projectreactor.netty:reactor-netty-http")
     testImplementation("de.bechte.junit:junit-hierarchicalcontextrunner")
+
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.32'
+
     testRuntimeOnly("org.junit.vintage:junit-vintage-engine") {
         exclude group: "junit", module: "junit"
     }

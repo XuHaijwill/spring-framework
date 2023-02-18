@@ -9,6 +9,10 @@ public class Car {
 
 	private double price;
 
+	public Car() {
+		System.out.println("No Parameters");
+	}
+
 	public int getMaxSpeed() {
 		return maxSpeed;
 	}
