@@ -1,7 +1,9 @@
 package com.xhjc.spring.factorybean;
 
 import org.springframework.beans.factory.FactoryBean;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CarFactoryBean implements FactoryBean<Car> {
 
 	private String carInfo;
