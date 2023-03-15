@@ -9,6 +9,10 @@ public class Person {
 	public Person() {
 	}
 
+	public void init(){
+		System.out.println("init method-->");
+	}
+
 	public Person(Long id, Integer age, String firstName, String lastName) {
 		this.id = id;
 		this.age = age;

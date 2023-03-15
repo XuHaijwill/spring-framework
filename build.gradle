@@ -344,6 +344,7 @@ configure([rootProject] + javaProjects) { project ->
 		systemProperty("io.netty.leakDetection.level", "paranoid")
 	}
 
+	//校验java code 配合checkstyle.xml文件使用
 	/*checkstyle {
 		toolVersion = "9.0"
 		configDirectory.set(rootProject.file("src/checkstyle"))
