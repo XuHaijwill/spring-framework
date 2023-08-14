@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 @Configuration
 @ComponentScan("com.xhjc.spring")
 @PropertySource("classpath:database.properties")
-//enable Aspect, cglib  proxyTargetClass=true otherwise jdk
+//enable Aspect, if you want cglib  please set proxyTargetClass=true otherwise jdk
 @EnableAspectJAutoProxy
 public class AppConfig {
 
