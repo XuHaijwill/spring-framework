@@ -3,10 +3,7 @@ package com.xhjc.spring.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -16,6 +13,8 @@ import javax.sql.DataSource;
 @Configuration
 @ComponentScan("com.xhjc.spring")
 @PropertySource("classpath:database.properties")
+//enable Aspect, cglib  proxyTargetClass=true otherwise jdk
+@EnableAspectJAutoProxy
 public class AppConfig {
 
 	@Autowired
