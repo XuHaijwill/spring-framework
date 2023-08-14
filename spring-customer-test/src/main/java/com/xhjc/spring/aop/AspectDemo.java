@@ -17,6 +17,6 @@ public class AspectDemo {
 
 	@Before("a()")
 	public void demoBefore(JoinPoint joinPoint) {
-		System.out.println("Before");
+		System.out.println("Before Aspect Test");
 	}
 }
